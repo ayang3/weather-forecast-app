@@ -9,6 +9,6 @@ $ npm start
 
 For this application, you need to install some libraries:
 
-npm install --save redux-promise
-npm install --save axios
-npm i --save react-sparklines@1.6.0
+$npm install --save redux-promise
+$npm install --save axios
+$npm i --save react-sparklines@1.6.0
