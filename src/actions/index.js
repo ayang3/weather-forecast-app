@@ -18,11 +18,18 @@ export function fetchWeather(city) {
 
     //console.log("Fetching weather data...");
     //console.log(url);
+    // Return a promise from the ajax call.
     const request = axios.get(url, { baseURL: '' });
 
     //console.log('Request:', request);
     
     // Return an action.
+    // The react-promise is extremely helpful, it stops the action
+    // and wait for the ajax call/promise to resolve to come back.
+    // Once the promise is resolved, it takes the promise to the payload
+    // and send the action to all reducers that are in the app.
+    // In which case, we did not even need to think about
+    // the asynchronous call.
     return {
         type: FETCH_WEATHER,
         payload: request

@@ -13,3 +13,11 @@ td, th {
 svg {
     height: 150px;
 }
+
+/* Give the size of the map. */
+/* Find the first td in each row and also find the first td and
+the child div, which is the map, and give it a height and width */
+td:first-of-type, td:first-of-type > div {
+    height: 200px;
+    width: 250px;
+}
