@@ -1,0 +1,15 @@
+/* Centralize the chart as well as the text. */
+td, th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+/* Give some space above the search bar. */
+.input-group {
+    margin: 20px 0px;
+}
+
+/* Fix the size of the chart. */
+svg {
+    height: 150px;
+}
