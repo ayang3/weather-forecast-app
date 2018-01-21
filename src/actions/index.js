@@ -16,9 +16,11 @@ export function fetchWeather(city) {
     // city,countryCode, use code us for now.
     const url = `${ROOT_URL}&q=${city},us`;  
 
-    console.log("Fetching weather data...");
-    console.log(url);
+    //console.log("Fetching weather data...");
+    //console.log(url);
     const request = axios.get(url, { baseURL: '' });
+
+    //console.log('Request:', request);
     
     // Return an action.
     return {
